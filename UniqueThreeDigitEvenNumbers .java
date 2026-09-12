@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class UniqueThreeDigitEvenNumbers {
+class UniqueThreeDigitEvenNumbers {
 
     public static int totalNumbers(int[] digits) {
 
