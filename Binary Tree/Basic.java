@@ -84,9 +84,9 @@ public class Basic {
                     if(currNode.left != null) {
                         q.add(currNode.left);
                     }
-                if(currNode.right != null) {
-                    q.add(currNode.right);
-                }
+                    if(currNode.right != null) {
+                        q.add(currNode.right);
+                    }
                 }
             }
         }
