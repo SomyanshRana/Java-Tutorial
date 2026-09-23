@@ -21,13 +21,13 @@ public class diameter {
         }
     }
 
-    public static Info diameter(Node root) {
+    public static Info diameter2(Node root) {
         if(root == null) {
             return new Info(0, 0);
         }
 
-        Info leftInfo = diameter(root.left);
-        Info rightInfo = diameter(root.right);
+        Info leftInfo = diameter2(root.left);
+        Info rightInfo = diameter2(root.right);
 
         int diam = Math.max(Math.max(leftInfo.diam, rightInfo.diam), leftInfo.ht + rightInfo.ht + 1);
         int ht = Math.max(leftInfo.ht, rightInfo.ht) + 1;
@@ -44,7 +44,7 @@ public class diameter {
         root.right.left = new Node(6);
         root.right.right = new Node(7);
 
-        System.out.println(diameter(root).diam);
+        System.out.println(diameter2(root).diam);
 
     }
 }
