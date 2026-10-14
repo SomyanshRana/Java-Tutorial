@@ -1,6 +1,6 @@
-public class Main {
+public class MinAddforVaid {
 
-    static class MinAddforVaid {
+    static class Solution {
 
         public int minAddToMakeValid(String s) {
 
